@@ -18,12 +18,12 @@
               "properties": {
                 "_languagePicker": {
                   "type": "object",
-                  "title": "Language Picker",
+                  "title": "Selector de limbă",
                   "default": {},
                   "properties": {
                     "languageSelector": {
                       "type": "string",
-                      "title": "Language selector",
+                      "title": "Selector de limbă",
                       "default": "Language selector",
                       "_adapt": {
                         "translatable": true
@@ -31,23 +31,23 @@
                     },
                     "_navOrder": {
                       "type": "number",
-                      "title": "Navigation bar order",
-                      "description": "Determines the order in which the button is displayed in the navigation bar. Negative numbers (e.g. -100) are left-aligned. Positive numbers (e.g. 100) are right-aligned.",
+                      "title": "Ordinea barei de navigare",
+                      "description": "Determină ordinea în care butonul este afișat în bara de navigare. Numerele negative (de ex. -100) sunt aliniate la stânga. Numerele pozitive (de ex. 100) sunt aliniate la dreapta.",
                       "default": 0
                     },
                     "_navTooltip": {
                       "type": "object",
-                      "title": "Navigation tooltip",
+                      "title": "Sfat de navigare",
                       "properties": {
                         "_isEnabled": {
                           "type": "boolean",
-                          "title": "Enable tooltip for navigation button",
+                          "title": "Activează sfatul pentru butonul de navigare",
                           "default": true
                         },
                         "text": {
                           "type": "string",
                           "title": "",
-                          "default": "Select course language",
+                          "default": "Selectează limba cursului",
                           "_adapt": {
                             "translatable": true
                           }
@@ -56,14 +56,14 @@
                     },
                     "_showLabel": {
                       "type": "boolean",
-                      "title": "Enable navigation button label",
-                      "description": "Determines whether a label is shown on the navigation bar button.",
+                      "title": "Activează eticheta butonului de navigare",
+                      "description": "Determină dacă o etichetă este afișată pe butonul din bara de navigare.",
                       "default": true
                     },
                     "navigationBarLabel": {
                       "type": "string",
-                      "title": "Navigation button label",
-                      "description": "The tooltip text to display on hover.",
+                      "title": "Eticheta butonului de navigare",
+                      "description": "Textul sfatului afișat la trecerea cursorului.",
                       "default": "Select course language",
                       "_adapt": {
                         "translatable": true
@@ -72,8 +72,8 @@
                     "_drawerPosition": {
                       "type": "string",
                       "default": "auto",
-                      "title": "Drawer position",
-                      "description": "Determines the starting position of the drawer to open.",
+                      "title": "Poziția sertarului",
+                      "description": "Determină poziția de pornire a sertarului pentru a se deschide.",
                       "enum": [
                         "auto",
                         "left",
@@ -82,17 +82,17 @@
                     },
                     "_navTooltip": {
                       "type": "object",
-                      "title": "Navigation tooltip",
+                      "title": "Sfat de navigare",
                       "properties": {
                         "_isEnabled": {
                           "type": "boolean",
-                          "title": "Enable tooltip for language picker button",
+                          "title": "Activează sfatul pentru butonul selectorului de limbă",
                           "default": true
                         },
                         "text": {
                           "type": "string",
-                          "title": "Tooltip text",
-                          "default": "Language selector",
+                          "title": "Textul sfatului",
+                          "default": "Selector de limbă",
                           "_adapt": {
                             "translatable": true
                           }

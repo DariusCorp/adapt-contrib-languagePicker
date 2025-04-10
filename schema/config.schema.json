@@ -10,72 +10,72 @@
       "properties": {
         "_languagePicker": {
           "type": "object",
-          "title": "Language Picker",
+          "title": "Selector de limbă",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
               "title": "Enable Language Picker",
-              "description": "Controls whether the Language Picker extension is enabled or disabled",
+              "description": "Controlează dacă extensia Selector de limbă este activată sau dezactivată",
               "default": false
             },
             "title": {
               "type": "string",
-              "title": "Browser window title",
-              "description": "Text to be shown in the browser's title bar when the language picker is displayed",
+              "title": "Titlul ferestrei browserului",
+              "description": "Textul afișat în bara de titlu a browserului când selectorul de limbă este afișat",
               "default": ""
             },
             "displayTitle": {
               "type": "string",
-              "title": "Language Picker title",
-              "description": "Header text for the Language Picker",
+              "title": "Titlul Selectorului de limbă",
+              "description": "Textul antetului pentru Selectorul de limbă",
               "default": ""
             },
             "body": {
               "type": "string",
-              "title": "Language Picker body",
-              "description": "Introductory or explanatory text for the Language Picker",
+              "title": "Textul introductiv pentru Selectorul de limbă",
+              "description": "Text introductiv sau explicativ pentru Selectorul de limbă",
               "default": ""
             },
             "_showOnCourseLoad": {
               "type": "boolean",
-              "title": "Show on course load",
-              "description": "Controls whether the Language Picker should be displayed on course load or not",
+              "title": "Afișează la încărcarea cursului",
+              "description": "Controlează dacă Selectorul de limbă ar trebui afișat la încărcarea cursului",
               "default": true
             },
             "_languagePickerIconClass": {
               "type": "string",
-              "title": "Icon class",
-              "description": "Your default options here are: icon-globe, icon-language-1, icon-language-2",
+              "title": "Clasa pictogramei",
+              "description": "Opțiunile implicite sunt: icon-globe, icon-language-1, icon-language-2",
               "default": "icon-language-2"
             },
             "_restoreStateOnLanguageChange": {
               "type": "boolean",
-              "title": "Restore course state on language change",
-              "description": "Determines whether or not the language picker will try to restore the 'state' of the course when the user changes language. It is advised that you only enable this setting if all course languages have exactly the same structure; if they do not, some loss of tracking data will occur. If this setting is disabled, tracking data will be cleared when the user switches language - the 'Confirm Message' should be used to warn the user of this",
+              "title": "Restaurează starea cursului la schimbarea limbii",
+              "description": "Determină dacă selectorul de limbă va încerca să restaureze 'starea' cursului când utilizatorul schimbă limba. Se recomandă activarea acestei setări doar dacă toate limbile cursului au exact aceeași structură; dacă nu, se va pierde o parte din datele de urmărire. Dacă această setare este dezactivată, datele de urmărire vor fi șterse când utilizatorul schimbă limba - 'Mesajul de confirmare' ar trebui utilizat pentru a avertiza utilizatorul despre acest lucru",
               "default": false
             },
             "_classes": {
               "type": "string",
-              "title": "Custom classes",
+              "title": "Clase personalizate",
               "description": "",
               "default": ""
             },
             "_languages": {
               "type": "array",
-              "title": "Languages",
+              "title": "Limbi",
               "items": {
                 "type": "object",
                 "properties": {
                   "_language": {
                     "type": "string",
-                    "title": "Language code",
-                    "description": "This text must match the name of the language-specific folder located in the course root, e.g. en, fr, es",
+                    "title": "Codul limbii",
+                    "description": "Acest text trebuie să corespundă numelui folderului specific limbii situat în rădăcina cursului, de ex. en, fr, es",
                     "default": ""
                   },
                   "_direction": {
                     "type": "string",
-                    "title": "Text direction",
+                    "title": "Direcția textului",
                     "description": "",
                     "default": "ltr",
                     "enum": [
@@ -86,31 +86,31 @@
                   },
                   "_isDisabled": {
                     "type": "boolean",
-                    "title": "Disable selection of this language",
-                    "description": "Allows you to disable selection of this language. This can be useful in situations where localisation into a particular language has not yet been completed",
+                    "title": "Dezactivează selecția acestei limbi",
+                    "description": "Permite dezactivarea selecției acestei limbi. Acest lucru poate fi util în situațiile în care localizarea într-o anumită limbă nu a fost încă finalizată",
                     "default": false
                   },
                   "displayName": {
                     "type": "string",
-                    "title": "Language name",
-                    "description": "A user friendly name for the language, e.g. English, Français, Español",
+                    "title": "Numele limbii",
+                    "description": "Un nume prietenos pentru limbă, de ex. English, Français, Español",
                     "default": ""
                   },
                   "warningTitle": {
                     "type": "string",
-                    "title": "Confirm Title",
-                    "description": "This text appears as the header of the dialog confirming the learner's intent to change languages",
+                    "title": "Titlul de confirmare",
+                    "description": "Acest text apare ca antet al dialogului care confirmă intenția cursantului de a schimba limba",
                     "default": ""
                   },
                   "warningMessage": {
                     "type": "string",
-                    "title": "Confirm body",
-                    "description": "This text appears as the body of the dialog confirming the learner's intent to change languages.  Note: the warning message should indicate that any progress will be lost when the language is switched",
+                    "title": "Corpul de confirmare",
+                    "description": "Acest text apare ca corp al dialogului care confirmă intenția cursantului de a schimba limba. Notă: mesajul de avertizare ar trebui să indice că orice progres va fi pierdut când limba este schimbată",
                     "default": ""
                   },
                   "_buttons": {
                     "type": "object",
-                    "title": "Prompt buttons",
+                    "title": "Butoane de solicitare",
                     "default": {},
                     "required": [
                       "yes",
@@ -119,12 +119,12 @@
                     "properties": {
                       "yes": {
                         "type": "string",
-                        "title": "Confirm button text",
+                        "title": "Textul butonului de confirmare",
                         "default": "Yes"
                       },
                       "no": {
                         "type": "string",
-                        "title": "Cancel button text",
+                        "title": "Textul butonului de anulare",
                         "default": "No"
                       }
                     }
