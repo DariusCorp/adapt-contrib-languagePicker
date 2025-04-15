@@ -4,13 +4,13 @@
     "type": "git",
     "url": "git://github.com/adaptlearning/adapt-contrib-languagePicker.git"
   },
-  "version": "5.5.3",
+  "version": "5.5.4",
   "framework": ">=5.30.2",
   "homepage": "https://github.com/adaptlearning/adapt-contrib-languagePicker",
   "bugs": "https://github.com/adaptlearning/adapt-contrib-languagePicker/issues",
   "extension": "languagePicker",
-  "displayName": "Language Picker",
-  "description": "An extension to allow the learner to select the course language in multi-language course",
+  "displayName": "Selector de limbi",
+  "description": "O extensie care permite cursantului să selecteze limba cursului",
   "main": "/js/adapt-languagePicker.js",
   "keywords": [
     "adapt-plugin",
